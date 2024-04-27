@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1400px;
+}
+
+#caravan {
+  background-image: url(https://preview.colorlib.com/theme/tralive/assets/img/hero/h1_hero1.png.webp);
+  background-position-x: -170px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#caravan .container img {
+  position: absolute;
+  top: 150px;
+  animation: caravan 4s ease-in-out infinite alternate;
+}
+
+@keyframes caravan {
+  from{
+    left: 150px;
+  }
+
+  to{
+    left: 280px;
+  }
+}

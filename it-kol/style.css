@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Josefin sans", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1400px;
+}
+
+/* Service */
+
+#service .heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#service .heading span {
+  font-size: 16px;
+  color: #ff4495;
+  margin-bottom: 15px;
+}
+
+#service .heading h1 {
+  font-size: 36px;
+  color: #232f55;
+  width: 35%;
+}
+
+#service .service-item .logo img {
+  width: 60px;
+  height: 60px;
+}
+
+#service .service-item .logo {
+  width: max-content;
+  padding: 20px;
+  background-color: #fff;
+  border: none;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+#service .service-item {
+  width: calc(100% / 3);
+  padding: 90px 10px;
+  position: relative;
+  z-index: 0;
+}
+
+#service .service-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  transform: translateY(20%);
+  background: -webkit-linear-gradient(top, #ff4495 0%, #ff6d6d 100%);
+  background: linear-gradient(to bottom, #ff4495 0%, #ff6d6d 100%);
+  z-index: -1;
+  transition: all 0.4s ease;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 5px;
+}
+
+#service .service-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+#service .service-item:hover {
+  box-shadow: 0 20px 30px rgba(35, 47, 85, 0.1);
+}
+
+#service .service-item:hover .text h3,
+#service .service-item:hover .text p {
+  color: #fff;
+}
+
+#service .service-item:hover::before {
+  transform: translateY(0%);
+  opacity: 1;
+  visibility: visible;
+}
+
+#service .service-item .text h3 {
+  font-size: 26px;
+  color: #232f55;
+  padding: 20px;
+  text-align: center;
+}
+
+#service .service-item .text p {
+  font-size: 16px;
+  color: #666;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 10px;
+}
