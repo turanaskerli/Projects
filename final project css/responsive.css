@@ -1,23 +1,57 @@
 @media screen and (max-width: 1200px) {
+  #hero,
   #about,
   #comments,
   #events,
   #footer,
   #form,
-  #menu,
-  #pie {
+  #menu {
     display: none;
+  }
+
+  #about .about-title h1 {
+    width: 24%;
+  }
+
+  #about .about-text p {
+    width: 80%;
+  }
+
+  #about .about-image img {
+    transform: translate(0%, -30%);
   }
 }
 
 @media screen and (max-width: 992px) {
+  #about .about-item {
+    flex-wrap: wrap;
+  }
 
+  #about .about-image img {
+    transform: translate(0%, 10%);
+  }
+
+  #about .about-title h1 {
+    width: 100%;
+  }
+
+  #about .about-text p {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px) {
-
+  #about .about-text p {
+    width: 83%;
+  }
 }
 
-@media screen and (max-width: 562px) {
-  
+@media screen and (max-width: 576px) {
+  #about .about-text p {
+    width: 115%;
+  }
+
+  #about .about-image img {
+    transform: translate(-5%, 10%);
+  }
 }
