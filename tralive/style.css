@@ -1,15 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  font-family: "Josefin Sans", sans-serif;
+  transition: all 0.3s ease;
+}
+
+:root {
+  --yellow: #ffc800;
+  --blue: #00095e;
+  --light_blue: #0056b3;
+}
+
+.btn {
+  background-color: var(--yellow);
+  padding: 13px 30px;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
 }
 
 .container {
   margin: 0 auto;
   width: 80%;
   max-width: 1400px;
+}
+
+header .header_content {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+header .nav_links nav ul {
+  display: flex;
+  gap: 25px;
+  padding: 15px;
+}
+
+header .nav_links {
+  display: flex;
+  gap: 30px;
+}
+
+header .nav_links a {
+  font-size: 16px;
+  color: var(--blue);
+  font-weight: 500;
+  position: relative;
+}
+
+header .nav_links a:hover {
+  color: var(--light_blue);
+}
+
+header .nav_links a:hover::before {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+header .nav_links a::before {
+  content: "";
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  top: 30px;
+  left: 0;
+  background-color: var(--light_blue);
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: all 0.3s linear;
+
 }
 
 #caravan {
@@ -28,11 +98,11 @@
 }
 
 @keyframes caravan {
-  from{
+  from {
     left: 150px;
   }
 
-  to{
+  to {
     left: 280px;
   }
 }

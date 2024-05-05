@@ -107,7 +107,6 @@ header label .line-down {
 
 #navbar:checked ~ .nav {
   opacity: 1;
-  visibility: visible;
   transform: translateX(-50%);
 }
 
@@ -156,12 +155,7 @@ header .hero-socials {
   gap: 15px;
 }
 
-header {
-  /* position: relative;
-  z-index: 0; */
-}
-
-header .nav {
+#hero header .nav {
   position: absolute;
   top: 0px;
   left: 100px;
@@ -173,7 +167,6 @@ header .nav {
   height: 100vh;
   transform: translateX(-70%);
   opacity: 0;
-  visibility: hidden;
 }
 
 header .nav .nav-items {

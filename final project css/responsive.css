@@ -1,11 +1,11 @@
 @media screen and (max-width: 1200px) {
-  #hero,
   #about,
   #comments,
   #events,
   #footer,
   #form,
-  #menu {
+  #menu,
+  #pie {
     display: none;
   }
 
@@ -20,9 +20,85 @@
   #about .about-image img {
     transform: translate(0%, -30%);
   }
+
+  #pie .pie-item .pie-image {
+    width: 45%;
+  }
+
+  #pie .pie-image img {
+    width: 550px;
+    transform: translate(75px, 35px);
+  }
+
+  #pie .pie-text {
+    width: 45%;
+  }
+
+  #pie .pie-title .heading {
+    width: 80%;
+  }
+
+  #hero header button {
+    display: none;
+  }
+
+  #hero #navbar {
+    display: none;
+  }
+
+  #hero .navbar-menu {
+    display: none;
+    visibility: visible;
+    transform: translateX(0%);
+    z-index: 999;
+  }
+
+  #hero header .nav {
+    opacity: 1;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+  }
+
+  header nav ul {
+    flex-direction: row;
+  }
+
+  header .hero-socials i {
+    display: none;
+  }
+
+  #hero .nav .nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+header nav ul a {
+  font-size: 13px;
+  color: #fff;
+}
 }
 
 @media screen and (max-width: 992px) {
+  #pie .pie-item {
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+
+  #pie .pie-image img {
+    width: 600px;
+  }
+
+  #pie .pie-title .heading {
+    width: 100%;
+  }
+
+  #pie .pie-text {
+    width: 100%;
+    transform: translate(75px);
+  }
+
   #about .about-item {
     flex-wrap: wrap;
   }
